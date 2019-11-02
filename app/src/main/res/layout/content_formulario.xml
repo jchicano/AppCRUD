@@ -132,12 +132,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:ems="10"
-                android:hint="Fecha de lanzamiento"
                 android:drawableLeft="@drawable/ic_fecha_18dp"
                 android:drawablePadding="5dp"
-                android:inputType="date"
-                android:textColor="@color/error" />
+                android:ems="10"
+                android:hint="Fecha de lanzamiento"
+                android:inputType="date" />
 
             <Switch
                 android:id="@+id/nuevoSwitch"

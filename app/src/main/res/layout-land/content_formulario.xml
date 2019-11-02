@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.FormularioActivity"
+    tools:showIn="@layout/activity_formulario">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="194dp"
+                android:layout_height="201dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/caratula_gtav_ps4" />
+
+            <Button
+                android:id="@+id/subirImagenButton"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_subir_18dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Subir imagen" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="364dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tituloEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_titulo_18dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Título"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/desarrolladorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_desarrollador_18dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Desarrollador"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/distribuidorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_distribuidor_18dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Distribuidor"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/notaEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_fecha_18dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Nota"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/plataformaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_plataforma_18dp"
+                    android:drawablePadding="5dp"
+                    android:text="Plataforma"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/plataformaSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/addPlataformaButton"
+                    android:layout_width="54dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="20dp"
+                    android:drawableLeft="@android:drawable/ic_input_add" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fechaLanzamientoEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_fecha_18dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Fecha de lanzamiento"
+                android:inputType="date" />
+
+            <Switch
+                android:id="@+id/nuevoSwitch"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:drawableLeft="@drawable/ic_nuevo_18dp"
+                android:drawablePadding="5dp"
+                android:text="Nuevo"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
