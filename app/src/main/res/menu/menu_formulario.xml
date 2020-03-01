@@ -6,6 +6,12 @@
     <!-- https://desarrollador-android.com/desarrollo/formacion/empezar-formacion/anadir-la-action-bar/anadir-botones-de-accion/ -->
     <!-- https://stackoverflow.com/questions/26377305/item-with-appshowasaction-not-showing -->
     <item
+        android:id="@+id/formulario_action_ayuda"
+        android:icon="@drawable/ic_help"
+        android:orderInCategory="100"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/formulario_action_save_game"
         android:icon="@drawable/ic_save"
         android:title="@string/save"
